@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">DummyProject</string>
+
+
+    <string name="btnUpload">Upload</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+
+    <string name="question">Question Text Goes here</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="endHeading"> انٽرويو جو نتيجو </string>
+    <string name="end01"> پورو ٿيو </string>
+    <string name="end02"> اڌ ۾ ڇڏيو </string>
+    <string name="end03"> انڪار ڪيو </string>
+    <string name="end04"> ٻن دورن کان پوء به ڪير به موجوده نه هو </string>
+    <string name="end05"> لڏي وئي </string>
+    <string name="other"> ٻيو ڪجھ </string>
+    <string name="nextSection">ايندڙ سيڪشن</string>
+    <string name="end_interview">ختم ڪيو</string>
+</resources>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="callback"
+            type="aku.edu.dummyproject.ui.ExampleActivity" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.ExampleActivity">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <!--f1a01-->
+            <androidx.cardview.widget.CardView style="@style/cardView">
+
+
+                <LinearLayout style="@style/linearlayout_view_wt_bound">
+
+                    <TextView
+                        style="@style/i_textview"
+                        android:text="@string/question" />
+
+                    <Spinner
+                        android:id="@+id/f1a01"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!--f1a02-->
+            <androidx.cardview.widget.CardView style="@style/cardView">
+
+
+                <LinearLayout style="@style/linearlayout_view_wt_bound">
+
+                    <TextView
+                        style="@style/i_textview"
+                        android:text="@string/question" />
+
+                    <EditText
+                        android:id="@+id/f1a02"
+                        style="@style/textInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!--f1a04-->
+            <androidx.cardview.widget.CardView style="@style/cardView">
+
+
+                <LinearLayout style="@style/linearlayout_view_wt_bound">
+
+                    <TextView
+                        style="@style/i_textview"
+                        android:text="@string/question" />
+
+                    <EditText
+                        android:id="@+id/f1a04"
+                        style="@style/textInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="xxx-x"
+                        android:inputType="number"
+                        android:maxLength="5" />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!--f1a05-->
+            <androidx.cardview.widget.CardView style="@style/cardView">
+
+
+                <LinearLayout style="@style/linearlayout_view_wt_bound">
+
+                    <TextView
+                        style="@style/i_textview"
+                        android:text="@string/question" />
+
+                    <RadioGroup
+                        android:id="@+id/f1a05"
+                        style="@style/radiogroup">
+
+                        <RadioButton
+                            android:id="@+id/f1a05a"
+                            style="@style/radiobutton"
+                            android:text="@string/yes" />
+
+                        <RadioButton
+                            android:id="@+id/f1a05b"
+                            style="@style/radiobutton"
+                            android:text="@string/no" />
+
+
+                        <EditText
+                            android:id="@+id/f1a0596x"
+                            style="@style/textInput"
+                            android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                            android:hint="@string/yes"
+                            android:inputType="text" />
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!--  = = = = =  END OF FORM FIELDS  = = = = = -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_Continue"
+                    style="@style/button"
+                    android:onClick="@{() -> callback.BtnContinue()}"
+                    android:text="Next Section" />
+
+                <Button
+                    android:id="@+id/btn_End"
+                    style="@style/button"
+                    android:layout_marginRight="10dp"
+                    android:onClick="@{() -> callback.BtnEnd()}"
+                    android:text="Section End" />
+
+                <!--'onClick' for btn_End will NOT change and always call 'endInterview'-->
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</layout>
